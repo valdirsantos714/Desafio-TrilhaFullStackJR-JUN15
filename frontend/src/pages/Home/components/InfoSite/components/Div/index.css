@@ -1,0 +1,56 @@
+.container-div {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementos-div {
+    padding: 1.5rem;
+}
+
+#h2-div {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.7rem;
+}
+
+#p-div {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#img-div {
+    width: 70%;
+}
+
+@media (min-width: 1024px) {
+    .container-div {
+        flex-flow: row;
+        gap: 1rem;
+    }
+
+    #h2-div {
+        font-size: 1.6rem;
+    }
+
+    #p-div {
+        font-size: 1.4rem;
+        margin-top: 0.7rem;
+    }
+    
+}
+
+@media (min-width: 1536px) {
+    #h2-div {
+        font-size: 1.8rem;
+    }
+
+    #p-div {
+        font-size: 1.5rem;
+    }
+    
+}

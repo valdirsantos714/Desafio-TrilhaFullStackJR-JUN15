@@ -1,0 +1,82 @@
+.header-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative;
+    padding: 0.7rem;
+}
+
+.titulo-header {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.hamburguer {
+    background-image: url(/imgs/barras.svg);
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-opcoes {
+    position: absolute;
+    top: 100%;
+    left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    width: 50%;
+    background-color: var(--vermelho);
+}
+
+.lista-opcoes-mobile {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.lista-opcoes-tablet-ou-pc {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .titulo-header {
+        font-size: 1.6rem;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .lista-opcoes-tablet-ou-pc {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        flex-flow: row wrap;
+        font-size: 1.3rem;
+    }
+
+    .header-container {
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1536px) {
+
+    .lista-opcoes-tablet-ou-pc {
+        gap: 2rem;
+    }
+    
+}
