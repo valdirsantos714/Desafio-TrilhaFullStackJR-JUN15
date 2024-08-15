@@ -1,1 +1,1 @@
-export const api:string = "http://localhost:8080"
+export const api:string = "https://desafio-trilhafullstackjr-jun15.onrender.com"
