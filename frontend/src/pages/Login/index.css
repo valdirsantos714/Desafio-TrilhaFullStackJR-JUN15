@@ -1,0 +1,78 @@
+.div-container-login {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-login {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.p-login {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.form-login {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+}
+
+.label-login {
+    font-size: 1.4rem;
+}
+
+.inputs-login {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.button-login {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border-radius: 2rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1.7rem;
+}
+
+.button-telaCadastro {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 1536px) {
+    .h2-login {
+        font-size: 2.5rem;
+    }
+
+    .p-login {
+        font-size: 2rem;
+    }
+    
+    .label-login {
+        font-size: 1.8rem;
+    }
+
+    .inputs-login {
+        font-size: 1.5rem;
+    }    
+
+    .button-login {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
