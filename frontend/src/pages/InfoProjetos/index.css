@@ -1,0 +1,102 @@
+.div-infoProjeto {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.h2-infoProjeto {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p-infoProjeto {
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+.form-infoProjeto {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+
+.div-form-infoProjeto {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding-top: 1rem;
+
+}
+
+.label-infoProjeto {
+    font-size: 1.2rem;
+}
+
+.input-infoProjeto {
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.button-infoProjeto {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border-radius: 2rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+}
+
+.div-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .div-infoProjeto {
+        width: 50%;
+        margin: auto;
+    }
+
+    .label-infoProjeto {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 1536px) {
+
+    .h2-infoProjeto {
+        font-size: 2.4rem;
+    }
+
+    .p-infoProjeto {
+        font-size: 2rem;
+        
+    
+    }
+
+    .label-infoProjeto {
+        font-size: 1.6rem;
+    }
+
+    .input-infoProjeto {
+        font-size: 1.4rem;
+    }
+
+    .button-infoProjeto {
+        font-size: 1.6rem;
+    }
+    
+}

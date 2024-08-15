@@ -6,6 +6,8 @@
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: 0.7rem;
+    border: 1px solid var(--branco);
 }
 
 .elementos-div {
@@ -40,6 +42,10 @@
     #p-div {
         font-size: 1.4rem;
         margin-top: 0.7rem;
+    }
+
+    #img-div{
+        width: 40%;
     }
     
 }
