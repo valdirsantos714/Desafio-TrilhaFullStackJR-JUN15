@@ -31,7 +31,8 @@ export const CadastroProjetos = () => {
         } else {
             try {
                 const response = await save(apiKey, idUser, titulo, descricao);
-
+                console.log(response);
+                
                 navigate("/projetos")
 
             } catch (error) {
@@ -60,7 +61,7 @@ export const CadastroProjetos = () => {
                                 Descrição
                             </label>
                             
-                            <textarea onChange={e =>atualizaDescricao}  placeholder="Digite a descrição do projeto" required name="descricao" 
+                            <textarea onChange={atualizaDescricao}  placeholder="Digite a descrição do projeto" required name="descricao" 
                             className="input-cadastroProjeto" id="descricao"/>
                             <button className="button-cadastroProjeto">
                                 Cadastrar Projeto

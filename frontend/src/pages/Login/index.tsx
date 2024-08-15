@@ -8,7 +8,7 @@ import { Footer } from "../../components/Footer"
 export const Login = () => {
 
     const navigate = useNavigate()
-    const {apiKey, setApiKey, idUser, setIdUser} = useGlobalContext()
+    const {setApiKey, setIdUser} = useGlobalContext()
 
     const [email, setEmail] = useState("")
     const [senha, setSenha] = useState("")

@@ -126,6 +126,8 @@ export const deletar = async (apiKey:string, idUser:number, idProjeto:number) =>
                 'Authorization': `Bearer ${apiKey}` 
             }
         });
+        console.log(response);
+        
         alert("Projeto deletado com sucesso!")
 
     } catch (e) {

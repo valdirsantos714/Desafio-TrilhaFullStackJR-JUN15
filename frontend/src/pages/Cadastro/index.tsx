@@ -28,6 +28,7 @@ export const Cadastro = () => {
         } else {
             try {
                 const dadosUser = await cadastre(email, senha)
+                console.log(dadosUser);
                 
                 
                 navigate("/login")

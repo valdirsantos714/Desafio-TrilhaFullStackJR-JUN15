@@ -53,6 +53,8 @@ export const InfoProjetos = () => {
         } else {
             try {
                 const response = await update(apiKey, idUser,idProjeto, titulo, descricao);
+                console.log(response);
+                
                 navigate("/projetos")
                
             } catch (error) {
@@ -65,7 +67,8 @@ export const InfoProjetos = () => {
         
         try {
             const response = await deletar(apiKey, idUser, idProjeto);
-
+            console.log(response);
+            
             navigate("/projetos")
                
         } catch (error) {
