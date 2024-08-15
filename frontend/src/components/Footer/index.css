@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--preto);
+    border-top: 1px solid var(--branco);
+    gap: 0.5rem;
+}
+
+.elementos-footer h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.elementos-footer p {
+    font-size: 1.2rem;
+} 
+
+.elementos-footer a {
+    color: var(--vermelho);
+}
+
+@media (min-width: 1024px) {
+    .elementos-footer {
+        font-size: 1.4rem;
+    }
+       
+}
+
+@media (min-width: 1536px) {
+
+    .elementos-footer {
+        font-size: 1.8rem;
+    }
+}

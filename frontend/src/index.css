@@ -5,6 +5,14 @@
     --preto-com-opacidade: rgba(22, 21, 21, 0.9);
 }
 
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,4 +35,9 @@ body {
     background-color: var(--preto);
     font-family: Arial;
     color: var(--branco);
+}
+
+h2, p, a, label, input {
+    animation: aparecer 800ms 1;
+
 }
