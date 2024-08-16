@@ -25,7 +25,7 @@ a {
     color: var(--branco);
 }
 
-a:hover {
+a:hover, button:hover {
     cursor: pointer;
     opacity: 83%;
     background-color: rgba(22, 21, 21, 90);

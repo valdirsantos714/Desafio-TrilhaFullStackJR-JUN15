@@ -45,9 +45,12 @@ export const InfoProjetos = () => {
         }
     }
 
-    const atualizar = async (e:React.FormEvent<HTMLFormElement>) => {
+    const previneAtualizacao = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
+    }
 
+    const atualizar = async () => {
+        
         if (titulo === "" || descricao === "") {
             alert("Digite o email e senha!")
         } else {
@@ -84,7 +87,7 @@ export const InfoProjetos = () => {
                 <div className="div-infoProjeto">
                     <h2 className="h2-infoProjeto">Informações do projeto </h2>
                     <p className="p-infoProjeto">Exclua o projeto ou atualize informações sobre ele</p>
-                    <form onSubmit={atualizar} className="form-infoProjeto">
+                    <form onSubmit={previneAtualizacao} className="form-infoProjeto">
                         <div className="div-form-infoProjeto">
                         <label htmlFor="titulo" className="label-infoProjeto">
                         Título
@@ -101,7 +104,7 @@ export const InfoProjetos = () => {
                             value={descricao} placeholder="Digite a descrição do projeto" required name="descricao" 
                             className="input-infoProjeto" id="descricao"/>
                             <div className="div-buttons">
-                            <button className="button-infoProjeto">
+                            <button onClick={atualizar} className="button-infoProjeto">
                                 Atualizar Projeto
                             </button>
                             <button onClick={excluir} className="button-infoProjeto">
