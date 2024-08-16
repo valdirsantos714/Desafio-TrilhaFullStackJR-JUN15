@@ -51,7 +51,9 @@ export const Cadastro = () => {
                         </label>
                         <input onChange={atualizaEmail} className="inputs-cadastro" type="text" name="email" id="email" placeholder="Digite seu email" required/>
                         
-                        <label className="label-cadastro " htmlFor="senha"></label>
+                        <label className="label-cadastro " htmlFor="senha">
+                            Senha:
+                        </label>
                         <input onChange={atualizaSenha}  className="inputs-cadastro" type="text" name="senha" id="senha" placeholder="Digite sua senha" required/>
                         <button className="button-cadastro">
                             Cadastrar-se

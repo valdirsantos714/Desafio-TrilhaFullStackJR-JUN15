@@ -56,7 +56,9 @@ export const Login = () => {
                         </label>
                         <input onChange={atualizaEmail} className="inputs-login" type="text" name="email" id="email" placeholder="Digite seu email" required/>
                         
-                        <label className="label-login " htmlFor="senha"></label>
+                        <label className="label-login " htmlFor="senha">
+                        Senha:
+                        </label>
                         <input onChange={atualizaSenha}  className="inputs-login" type="text" name="senha" id="senha" placeholder="Digite sua senha" required/>
                         <button className="button-login">
                             Entrar
