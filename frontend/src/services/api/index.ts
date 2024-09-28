@@ -1,1 +1,1 @@
-export const api:string = "https://desafio-trilhafullstackjr-jun15.onrender.com"
+export const api:string = "https://desafio-trilhafullstackjr-jun15-1.onrender.com"
